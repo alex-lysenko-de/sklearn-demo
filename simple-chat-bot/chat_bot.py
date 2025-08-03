@@ -25,7 +25,7 @@ import csv
 import re
 import numpy as np
 from sklearn.neural_network import MLPClassifier
-import joblib
+import pickle
 
 
 # ---------- Textverarbeitung ----------
@@ -85,18 +85,31 @@ class NNetwork:
         self.file_name = file_name
         self.model = None
         self.vocabulary = None
+        self.output_categories = None # Add this to store the unique output categories
 
     def load(self):
-        bundle = joblib.load(self.file_name)
+        with open(self.file_name, 'rb') as file:
+            bundle = pickle.load(file)
         self.model = bundle['model']
         self.vocabulary = bundle['vocabulary']
+        self.output_categories = bundle.get('outputs') # Load outputs, handling older files without it
+
+    def save(self):
+        with open(self.file_name, 'wb') as file:
+            pickle.dump({
+                'model': self.model,
+                'vocabulary': self.vocabulary,
+                'outputs': self.output_categories # Use the stored attribute here
+                }, file)
 
     def teach(self, input_vectors, output_list, vocabulary):
         self.vocabulary = vocabulary
+        # Store the unique output categories
+        self.output_categories = list(set(output_list))
         hidden_size = len(input_vectors[0])
         self.model = MLPClassifier(hidden_layer_sizes=(hidden_size,), activation='relu', max_iter=1000)
         self.model.fit(np.array(input_vectors), np.array(output_list))
-        joblib.dump({'model': self.model, 'vocabulary': self.vocabulary , 'outputs': list(set(output_list))}, self.file_name)
+        self.save()
 
     def predict(self, input_vector):
         return self.model.predict(np.array(input_vector))
