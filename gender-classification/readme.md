@@ -1,15 +1,11 @@
----
-
-## 📁 1. `README.md` (Main)
-
 # Gender Classification with Scikit-Learn
 
 This project demonstrates how to classify gender using different machine learning models with the `scikit-learn` library in Python.
 
 ## 📂 Available Models
 
-1. [🌳 Decision Tree Classifier](#decision_tree_classif)
-2. [🧠 MLP Classifier (Neural Network)](#mpl_classif)
+1. [🌳 Decision Tree Classifier](#decision_tree_classifier)
+2. [🧠 MLP Classifier (Neural Network)](#mlp_classifier)
 
 ## 📈 Features
 
@@ -31,9 +27,6 @@ It shows:
 - Side-by-side bar chart of prediction performance
 
 ---
-
-
-## 🌳 2. Decision Tree Classifier [#decision_tree_classif]
 
 # Decision Tree Classifier 🌳
 
@@ -77,9 +70,9 @@ Accuracy: 0.92
 
 ---
 
-## 🧠 3. MLP Classifier (Neural Network)`mpl_classif`
+# 🧠  MLP Classifier
 
-# MLP Classifier (Neural Network) 🧠
+## MLP Classifier (Neural Network) 🧠
 
 This script uses `MLPClassifier` (Multi-layer Perceptron) with a `StandardScaler` pipeline to classify gender from the dataset.
 
