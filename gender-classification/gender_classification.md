@@ -5,8 +5,7 @@ This is a simple Python script that demonstrates how to use the `scikit-learn` l
 ## 📁 Files
 
 - `gender_classification.csv` – The dataset file
-- `gender_classifier.py` – Python script containing the implementation
-- `README.md` – This file
+- `compare_models.py` – Python script containing the implementation
 
 ## 🛠️ Requirements
 
@@ -19,11 +18,11 @@ pip install pandas scikit-learn matplotlib seaborn
 ## 🚀 How to Run
 
 1. Clone or download the repository.
-2. Place `gender_classification.csv` in the same directory as `gender_classifier.py`.
+2. Place `gender_classification.csv` in the same directory as `compare_models.py`.
 3. Run the script:
 
 ```bash
-python gender_classifier.py
+python compare_models.py
 ```
 
 ## 🧠 What the Script Does
@@ -38,40 +37,6 @@ python gender_classifier.py
 8. Displays a confusion matrix.
 9. Shows a bar chart with correct vs. incorrect predictions.
 
-## 📈 Example Output
-
-```
-Accuracy: 0.91
-```
-
-### 🌳 Decision Tree Visualization
-
-The script displays a full visualization of the trained Decision Tree. This helps you understand:
-
-- How the model splits the data at each node
-- Which features are used
-- What class each leaf represents
-
-Each node shows:
-- The condition used for the split
-- The class distribution
-- The predicted class
-
-### 🔳 Confusion Matrix
-
-The confusion matrix shows the number of true vs. predicted classifications:
-
-- Diagonal = correct predictions
-- Off-diagonal = misclassifications
-
-### 📊 Prediction Bar Chart
-
-This bar chart shows:
-
-- ✅ Green: Number of correct predictions  
-- ❌ Red: Number of incorrect predictions  
-
-This gives a visual representation of how well the model performed on the test set.
 
 ## 📚 Libraries Used
 
