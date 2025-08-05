@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # Gender Classification with Scikit-Learn
 
 This is a simple Python script that demonstrates how to use the `scikit-learn` library to classify gender based on a dataset using a Decision Tree Classifier. It also includes visualizations: a decision tree, a confusion matrix, and a bar chart showing prediction performance.
@@ -86,9 +82,9 @@ This gives a visual representation of how well the model performed on the test s
 
 
 ## Screenshot
-[![decision_tree](img/decision_tree.png)]
+![decision_tree](img/decision_tree.png)
 
-[![confusion_matrix](img/confusion_matrix.png)]
+![confusion_matrix](img/confusion_matrix.png)
 
-[![prediction_results](img/prediction_results.png)]
+![prediction_results](img/prediction_results.png)
 
