@@ -3,7 +3,6 @@
 
 ### 📘 `README_sklearn.md`
 
-```markdown
 # Introduction to Scikit-Learn (sklearn) 📚
 
 ![Scikit-learn](https://scikit-learn.org/) is one of the most popular and powerful machine learning libraries in Python. It provides simple and efficient tools for data mining, data analysis, and machine learning, and it is built on top of NumPy, SciPy, and matplotlib.
@@ -51,7 +50,7 @@ Comparing different models helps us:
 You can find the detailed steps and results in the following two projects:
 
 - ![Gender Classification](./gender-classification/README.md)
-- ![Simple ChatBot](./simple-chat-bot/README.md)
-```
+- [Simple ChatBot](./simple-chat-bot/README.md)
+
 
 ---
