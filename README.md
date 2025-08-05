@@ -45,6 +45,6 @@ Comparing different models helps us:
 You can find the detailed steps and results in the following two projects:
 
 - [Gender Classification](./gender-classification/readme.md)
-- [Simple ChatBot](./simple-chat-bot/readme.md)
+- [Simple ChatBot](./simple-chat-bot/README.md)
 
 
