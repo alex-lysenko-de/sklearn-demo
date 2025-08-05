@@ -4,8 +4,8 @@ This project demonstrates how to classify gender using different machine learnin
 
 ## 📂 Available Models
 
-1. [🌳 Decision Tree Classifier](#decision_tree_classifier)
-2. [🧠 MLP Classifier (Neural Network)](#mlp_classifier)
+1. [🌳 Decision Tree Classifier](#decision-tree-classifier-)
+2. [🧠 MLP Classifier (Neural Network)](#--mlp-classifier)
 
 ## 📈 Features
 
